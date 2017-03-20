@@ -17,6 +17,10 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+body {
+    background-color: #FDFDFD;
+}
+
 .container-fluid {
     padding: 0px;
 }
@@ -25,7 +29,7 @@
   height: 35px;
   margin-bottom: 0px;
   min-height: 25px !important;
-  box-shadow: 0px 1px 8px #888888;
+  box-shadow: 0px 1px 3px #888888;
 }
 
 .navbar-left {
@@ -55,6 +59,31 @@
 
 .navbar-default .navbar-nav > li > a {
     color: #FFFFFF;
+    &:hover {
+        color: #d9e6ee;
+    }
+    &:collapse {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: #d9e6ee;
+    }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  margin-top: 2px;
+  background-color: white;
+  height: 2px;
+}
+
+.navbar-default .navbar-toggle {
+  padding-top: 5px;
+  margin-top: 3px;
+  border: 2px solid white;
+  height: 28px;
+  &:hover, &:focus {
+    background-color: #d9e6ee;
+  }
 }
 
 .nav-element {
@@ -73,8 +102,8 @@
   position: fixed;
   z-index: 9999;
   margin-top: -50px;
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   background: #00629e;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -87,30 +116,106 @@
 .circle-nav-element-bottom {
   position: fixed;
   margin-top: -50px;
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   background: #00629e;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  box-shadow: 0px 5px 10px #888888;
+  box-shadow: 0px 2px 3px #888888;
 }
 
 .preview-area {
-    height: 250px;
+    height: 300px;
     background-color: #d9e6ee;
+    border-bottom: 2px solid #999999;
+}
+
+.small-testimonial {
+    height: 100px;
+    background-color: #d9e6ee;
+    border-bottom: 2px solid #999999;
 }
 
 .portrait-square {
-    margin-top: 65px;
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 30%;
+    max-width: 180px;
+    margin-top: 75px;
     background: #999999;
+    margin-left: 50px;
 }
 
 .portrait-square h2 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    padding-top: 40px;
+    padding-top: 45px;
     color: #FFFFFF;
+}
+
+.intro-text-area {
+    margin-top: 90px;
+    margin-left: 20px;
+}
+
+.intro-text {
+    font-family: 'Rasa', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.testimonial-area {
+    margin-top: 90px;
+    margin-right: 100px;
+}
+
+.blockquote-reverse, blockquote.pull-right {
+    border-right: 5px solid #00629e;
+}
+
+.testimonial-text {
+    font-family: 'Rasa', serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 110%;
+}
+
+//Navbar Collapse Breakpoint
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
 }
