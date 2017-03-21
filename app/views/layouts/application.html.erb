@@ -24,18 +24,36 @@
             </div>
             <div class="collapse navbar-collapse" id="main-nav-collapse">
               <ul class="nav navbar-nav navbar-left">
-                <li class="nav-element"><a href="/blog">Blog</a></li>
-                <li class="nav-element"><a href="/resources">Resources</a></li>
+                <li class="nav-element nav-left-group"><a href="/blog">Blog</a></li>
+                <li class="nav-element nav-left-group"><a href="/resources">Resources</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li class="nav-element"><a href="/about">About Me</a></li>
-                <li class="nav-element"><a href="/contact">Contact</a></li>
+                <li class="nav-element nav-right-group"><a href="/about">About Me</a></li>
+                <li class="nav-element nav-right-group"><a href="/contact">Contact</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </nav>
-          <div class="circle-nav-element col-centered">
+          <div class="circle-md-lg visible-lg visible-md">
+            <div class="circle-nav-element col-centered">
+            </div>
+            <div class="circle-nav-element-bottom col-centered">
+            </div>
           </div>
-          <div class="circle-nav-element-bottom col-centered">
+          <div class="container-fluid">
+            <div class="circle-sm-xs visible-sm visible-xs">
+            <div class="circle-nav-element-sm col-centered">
+            </div>
+            <div class="row">
+              <div class="sm-menu-bar col-sm-10 col-xs-12 col-centered text-center">
+                <ul class="list-inline">
+                  <li id="sm-menu"><%= link_to "Blog", root_path %></li>
+                  <li id="sm-menu"><%= link_to "Resources", resource_path %></li>
+                  <li id="sm-menu"><%= link_to "About Me", about_path %></li>
+                  <li id="sm-menu"><%= link_to "Contact", new_contact_path %></li>
+                </ul>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
