@@ -23,6 +23,31 @@ body {
 
 //font sizes
 
+p {
+    font-family: "Rasa", serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: "Dosis", sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: "Dosis", sans-serif;
+    font-size: 26px;
+}
+
+h3 {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+}
+
+h4 {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 700px) {
     body {
         font-size: 2em;
@@ -110,7 +135,7 @@ body {
 }
 
 .nav-element {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
 }
@@ -213,14 +238,14 @@ body {
 
 .intro-text-area {
     color: #00629e;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 20px;
 }
 
 .intro-text {
-    font-family: 'Dosis', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
+    font-family: 'Rasa', serif;
+    font-size: 17px;
+    font-weight: 500;
     line-height: 110%;
     text-align: center;
 }
@@ -299,21 +324,18 @@ body {
 
 .post-title {
     font-family: 'Dosis', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 700;
 }
 
 .subheading {
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
-    font-size: 16px;
     margin-top: -6px;
 }
 
 .timecode {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Rasa', serif;
     font-weight: 500;
-    font-size: 16px;
     margin-top: -30px;
     color: #00629e;
 }
@@ -330,7 +352,6 @@ body {
     margin-right: 100px;
     font-family: 'Rasa', serif;
     font-weight: 400px;
-    font-size: 17px;
     line-height: 110%;
     color: #333333;
     text-indent: 30px;
@@ -338,7 +359,7 @@ body {
 
 .read-more {
     width: 90px;
-    height: 30px;
+    height: 35px;
     border-radius: 10px;
     margin-top: 15px;
     background-color: #00629e;
@@ -346,8 +367,7 @@ body {
 
 .read-more-text {
     font-family: 'Dosis', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 500;
     color: #FFFFFF;
     margin-top: 8px;
 }
@@ -393,4 +413,32 @@ body {
     font-family: 'Rasa', serif;
     font-weight: 500;
     font-size: 20px;
+}
+
+.list-wrapper {
+    margin-top: 30px;
+}
+
+.list-barrier {
+    margin-top: 50px;
+    width: 80%;
+    height: 3px;
+    background-color: #00629e;
+}
+
+.freebie-title {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+
+.freebie-description {
+    font-family: 'Rasa', serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-indent: 30px;
+}
+
+.tempreview {
+    margin-top: 20px;
+    box-shadow: 0px 1px 3px #888888;
 }
